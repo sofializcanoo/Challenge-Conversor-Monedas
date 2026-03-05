@@ -6,7 +6,7 @@ import java.net.http.HttpResponse;
 
 public class ConsultaMoneda {
     public Moneda buscarMoneda(String base, String target) {
-        // "6eeb1dfa859b8c98f529fd0e" por tu clave real
+        // "6eeb1dfa859b8c98f529fd0e"
         URI direccion = URI.create("https://v6.exchangerate-api.com/v6/TU-API-KEY/pair/" + base + "/" + target);
 
         HttpClient client = HttpClient.newHttpClient();
